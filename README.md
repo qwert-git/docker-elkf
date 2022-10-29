@@ -1,5 +1,5 @@
-### The Docker ELK stack with Filebeat
-The Docker ELK stack based on deviantony/docker-elk repository, but changed to use filebeat with mysql slow query log.
+# The Docker ELK stack with Filebeat
+The Docker ELK stack based on [deviantony/docker-elk repository](https://github.com/deviantony/docker-elk#elastic-stack-elk-on-docker), but changed to use filebeat with mysql slow query log.
 
 The ELK stack is a log system consists of ElasticSearch+Logstash+Kibana.
 
@@ -8,7 +8,7 @@ Password for root user for mysql you can find in the .env file. To test you are 
 
 Detailed setup information for the ELK stack you are to find in the deviantony/docker-elk repository.
 
-# Problems that I faced
+### Problems that I faced
 1. It possible that no such file or directory exists
 Solution: create the file first
 2. SET GLOBAL slow_query_log=ON	Error Code: 29. File '/var/log/mysql-slow.log' not found (OS errno 13 - Permission denied)
